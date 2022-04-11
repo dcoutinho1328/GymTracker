@@ -1,11 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native'
-import MainTitle from './src/components/MainTitle'
+import HeaderTitle from './src/components/HeaderTitle'
+import LoginPage from './src/components/LoginPage'
+import LogoContainer from './src/components/LogoContainer'
+
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <MainTitle label={'Test text'} />
+      <LogoContainer/>
+      <HeaderTitle label={'Initial Page'} />
+      <LoginPage />
     </View>
   );
 }
@@ -13,8 +18,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#ffffff',
+    opacity: 1
   },
-});
+})
